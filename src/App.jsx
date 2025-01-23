@@ -16,7 +16,6 @@ const App = () => {
     axios
       .get(`https://www.omdbapi.com/?t=${search}&apikey=3a95680b`)
       .then((res) => {
-        console.log(res.data);
         let d = res.data;
         setData({
           Title: d.Title,
